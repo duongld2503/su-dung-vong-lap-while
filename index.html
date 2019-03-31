@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="num"></p>
+<p id="tong"></p>
+<script>
+    let num = parseInt(prompt("Enter number : "));
+    let tong = 0;
+    let text = "";
+    while (num != -1){
+        text += num + "<br>";
+        document.getElementById("num").innerHTML = text;
+        tong += num;
+        num = parseInt(prompt("nhap so: "));
+    }
+    document.getElementById("tong").innerText = tong;
+</script>
+</body>
+</html>
